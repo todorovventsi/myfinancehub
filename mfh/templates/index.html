@@ -10,11 +10,19 @@
     <title>My Finance Hub</title>
 </head>
 <body>
-    <div class="container">
-        <div class="display-box">Profile section</div>
-        <section class="display-box">Accounts and stat section</section>
-        <nav class="display-box">Navigation</nav>
-        <main class="display-box">Main content section</main>
+<div class="container">
+    {# START display user section #}
+    <div class="display-box profile-section">
+        <img src="{% static 'images/default_user_m.jpg' %}" class="profile-section__image" alt="Profile Image">
+        <div class="profile-section__info-box">
+            <h3 class="profile-section__name">Ventsislav Todorov</h3>
+            <p class="profile-section__date">--joined November 2021</p>
+        </div>
     </div>
+    {# END display user section #}
+    <section class="display-box">Accounts and stat section</section>
+    <nav class="display-box">Navigation</nav>
+    <main class="display-box">Main content section</main>
+</div>
 </body>
 </html>
